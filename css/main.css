@@ -208,6 +208,15 @@ pre,
   color: #ffffff;
   border: #23A140; }
 
+.btn-b4h table td {
+  background-color: #99ae7c; }
+
+.btn-b4h a {
+  background-color: #99ae7c;
+  border-color: #99ae7c;
+  color: #ffffff;
+  border: #99ae7c; }
+
 /* -------------------------------------
   NOTICES
 ------------------------------------- */
@@ -362,3 +371,20 @@ table.soil tr {
 /* -------------------------------------
     B4H Specific Styles
 ------------------------------------- */
+table.b4h {
+  padding: 0px; }
+
+table.b4h tr {
+  padding: 0px; }
+
+.b4h-base {
+  background-color: #7a5542;
+  color: #FFFFFF;
+  /*background-image: url(../img/soil-brown.png);*/
+  background-image: url(https://system.eu1.netsuite.com/core/media/media.nl?id=3946&c=4635725_SB1&h=f6f54f312e002007aeb4);
+  background-position: top 0px;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  min-height: 60px;
+  height: 60px; }
