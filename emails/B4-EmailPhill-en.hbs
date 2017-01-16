@@ -1,0 +1,54 @@
+---
+layout: default.hbs
+subject: Hi This is Phill 
+---
+<span class="preheader">This is preview text on some email clients. Please click the important button in this email.</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        <a href="http://www.best4hedging.com"><img src="https://www.best4hedging.co.uk/images/logo.png" height="62" alt="Best4hedging Logo"></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      <tr>
+        <td>
+        <p>Dear <NLCUSTOMERNAME>,</p>
+        </td>
+      </tr>
+        <tr>
+          <td>
+            <p>This is Phill's example email, with simple text in a paragraph</p>
+            <p>This is another paragraph. We are also use the tag 'NLCUSTOMNAME' after the salutation. If not sending from Netsuite, this may appear blank. There is an example button below.</p>
+            {{> button type='b4h' url='http://www.best4hedging.co.uk' title='Click!' }}
+            <p>This template should come in handy for branded transactional emails. As a final point we use some clever templating to build the media links below - Never edit them directly!</p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+
+  </tr>
+<tr>
+  <td>{{> bodybase_b4h }}</td>
+</tr>
+</table>
+<div class="footer">
+  <table>
+  <tr>
+      <td class="align-center">
+        <p>{{> socialbar_b4h }}</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="align-center">
+        <p>{{> unsubscribe_hd }}</p>
+      </td>
+    </tr>
+  </table>
+</div>
