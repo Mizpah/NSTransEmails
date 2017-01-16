@@ -1,0 +1,50 @@
+---
+layout: default.hbs
+subject: email cancelled
+---
+<span class="preheader">Thankyou for registering with Hedges Direct. Please click the button below to confirm your details .</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        <a href="http://www.hedgesdirect.com"><img src="../src/img/Hedges-Logo.png" height="127" alt="Hedges Direct Logo"></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      <tr>
+        <td>
+        <p>Dear <NLCUSTOMERNAME>,</p>
+        </td>
+      </tr>
+        <tr>
+          <td>
+            <p>This is confirmation that your order (order number) has been cancelled.</p>
+            <p>If you need any further help or advice please contact our sales and service team.<br/>
+            <b/>Need something different or further advice?</b><br/>
+            If you have cancelled your order but still require hedging, please contact our sales and service team who can answer any questions or queries and help you get the right hedging in the right quantities.</p>
+             Or why not visit our Youtube channel for helpful videos on choosing the right species and planting advice, including preparing the ground and using rootgrow. For a written explantion, visit our blog and advice section.</p>             
+            {{> button type='hedges' url='http://www.hedgesdirect.co.uk' title='Click Me!' }}
+            <p>Thank you,<br/>Hedges Direct</p><br/><br/>
+            <p>Your order details are</p> (order details.....)
+          </td>
+        </tr>
+
+      </table>
+    </td>
+
+  </tr>
+        </table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+        <p>{{> follow_hd }}</p>
+      </td>
+    </tr>
+  </table>
+</div>

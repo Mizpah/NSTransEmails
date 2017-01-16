@@ -1,0 +1,56 @@
+---
+layout: default.hbs
+subject: Order Dispatch Carrier 
+---
+<span class="preheader">This is preview text on some email clients. Please click the important button in this email.</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        <a href="http://www.hedgesdirect.com"><img src="https://system.eu1.netsuite.com/core/media/media.nl?id=3942&c=4635725_SB1&h=f414b4be4f035671560e" height="80" alt="Hedges Direct Logo"></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      <tr>
+        <td>
+        <p>Dear <NLCUSTOMERNAME>,</p>
+        </td>
+      </tr>
+        <tr>
+          <td>
+            <p>Your order (order number) has now been dispatched with (carriername).
+            All orders are delivered without requiring a signature so you don't have to worry about being on hand to receive the delivery</p>
+            <p>You can track the progress opf your order here (tracking info). 
+            <p/>Please contact us if you rewuire any futher assistance</p>
+            <p>Thank you,<br/>Hedges Direct</p><br/><br/>
+            <p>Your order details are</p> (order details.....)
+          </td>
+        </tr>
+
+      </table>
+    </td>
+
+  </tr>
+<tr>
+  <td>{{> bodybase_hd }}</td>
+</tr>
+</table>
+<div class="footer">
+  <table>
+  <tr>
+      <td class="align-center">
+        <p>{{> socialbar_hd }}</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="align-center">
+        <p>{{> unsubscribe_hd }}</p>
+      </td>
+    </tr>
+  </table>
+</div>

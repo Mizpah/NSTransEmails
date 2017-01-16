@@ -62,3 +62,41 @@
     color: $primary-color;
   }
 }
+
+// Hedges button
+.btn-hedges {
+
+  table td {
+    background-color: $hedges-green;
+  }
+
+  a {
+    background-color: $hedges-green;
+    border-color: $hedges-green;
+    color: #ffffff;
+    border: $hedges-green;
+
+    }
+
+
+
+}
+
+// Best4 button
+.btn-b4h {
+
+  table td {
+    background-color: #99ae7c;
+  }
+
+  a {
+    background-color: #99ae7c;
+    border-color: #99ae7c;
+    color: #ffffff;
+    border: #99ae7c;
+
+    }
+
+
+
+}

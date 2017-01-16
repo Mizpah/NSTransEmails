@@ -1,0 +1,54 @@
+---
+layout: default.hbs
+subject: Processing pre-order 1 
+---
+<span class="preheader">This is preview text on some email clients. Please click the important button in this email.</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        <a href="http://www.hedgesdirect.com"><img src="https://system.eu1.netsuite.com/core/media/media.nl?id=3942&c=4635725_SB1&h=f414b4be4f035671560e" height="80" alt="Hedges Direct Logo"></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      <tr>
+        <td>
+        <p>Dear <NLCUSTOMERNAME>,</p>
+        </td>
+      </tr>
+        <tr>
+          <td>
+            <p>This is the first processing pre-order email, with simple text in a paragraph</p>
+            <p>This is another paragraph. We are also use the tag 'NLCUSTOMNAME' after the salutation. If not sending from Netsuite, this may appear blank. There is an example button below.</p>
+            {{> button type='hedges' url='http://www.hedgesdirect.co.uk' title='Click Me!' }}
+            <p>This template should come in handy for branded transactional emails. As a final point we use some clever templating to build the media links below - Never edit them directly!</p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+
+  </tr>
+<tr>
+  <td>{{> bodybase_hd }}</td>
+</tr>
+</table>
+<div class="footer">
+  <table>
+  <tr>
+      <td class="align-center">
+        <p>{{> socialbar_hd }}</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="align-center">
+        <p>{{> unsubscribe_hd }}</p>
+      </td>
+    </tr>
+  </table>
+</div>
