@@ -1,8 +1,8 @@
 ---
 layout: default.hbs
-subject: Processing Order - New
+subject: We are processing your order (order ref)
 ---
-<span class="preheader">This is preview text on some email clients. Please click the important button in this email.</span>
+<span class="preheader">You can see the details of your order below.</span>
 <div class="header">
   <table>
     <tr>
@@ -24,9 +24,9 @@ subject: Processing Order - New
         <tr>
           <td>
             <p>Thank you for your order, ref <customer order reference number>. Your order is now being processed</p>
-            <p>Most deliveries are made within 3 to 5 working days - though sometimes may take a little longer. The majority of orders will delivered by courier and some larger orders will be put onto a pallet for delivery - we will contact you seperately if this is the case.</p>
-            <p> You will receive confirmation of the the dispatch of your order but should you have any queries in the meantime please contact our service team on <phone number></p>
-            <p> <b/> Need Help Planting? </b><br/>Visit our Youtube channel for helpful videos on what you'll need and how to plant, including preparing the ground and using rootgrow. Or, for a written explantion, visit our blog and advice section.</p>             
+            <p>Most deliveries are made within 3 to 5 working days - though sometimes may take a little longer. The majority of orders will delivered by courier and some larger orders will be put onto a pallet for delivery - we will contact you separately if this is the case.</p>
+            <p> You will receive confirmation of the dispatch of your order but should you have any queries in the meantime please contact our service team on <phone number></p>
+            <p> <b/> Need Help Planting? </b><br/>Visit our Youtube channel for helpful videos on what you'll need and how to plant, including preparing the ground and using rootgrow. Or, for a written explanation, visit our blog and advice section.</p>             
             {{> button type='hedges' url='http://www.hedgesdirect.co.uk' title='Click Me!' }}
             <p>The details of your order are;</p>
             {product.orderID}
