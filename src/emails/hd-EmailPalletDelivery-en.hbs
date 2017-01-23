@@ -1,6 +1,6 @@
 ---
 layout: default.hbs
-subject: Your Hedges Direct order has been despatched
+subject: Your pallet delivery with Hedges Direct has been despatched
 ---
 <span class="preheader">See below for order and delivery information.</span>
 <div class="header">
@@ -23,11 +23,14 @@ subject: Your Hedges Direct order has been despatched
       </tr>
         <tr>
            <td>
-            <p>Your order (order number) has now been dispatched. 
+            <p>Your order <NLORDERCONFIRMATIONNUMBER> has now been dispatched. 
             All orders are delivered without requiring a signature so you don't have to worry about being on hand to receive the delivery</p>
             <p/>Please contact us if you require any further assistance</p>
             <p>Thank you,<br/>Hedges Direct</p><br/><br/>
-            <p>Your order details are</p> (order details.....)
+            <p>Your order details are</p> 
+            <NLCURRENTDATE>
+            <NLITEMLIST>
+            <NLSHIPADDRESS>
           </td>
         </tr>
 
