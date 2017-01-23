@@ -1,8 +1,8 @@
 ---
 layout: default.hbs
-subject: Thank you for your Best4Hedging order
+subject: Thank you for your order with Best4Hedging
 ---
-<span class="preheader">This is preview text on some email clients. Please click the important button in this email.</span>
+<span class="preheader">We have received your order <NLORDERCONFIRMATIONNUMBER> .</span>
 <div class="header">
   <table>
     <tr>
@@ -23,10 +23,16 @@ subject: Thank you for your Best4Hedging order
       </tr>
         <tr>
           <td>
-            <p>This is a order confirmation example, with simple text in a paragraph</p>
-            <p>This is another paragraph. We are also use the tag 'NLCUSTOMNAME' after the salutation. If not sending from Netsuite, this may appear blank. There is an example button below.</p>
-            {{> button type='b4h' url='http://www.best4hedging.co.uk' title='Click!' }}
-            <p>This template should come in handy for branded transactional emails. As a final point we use some clever templating to build the media links below - Never edit them directly!</p>
+            <p>Thank you for your order placed on <NLCURRENTDATE>. Your order number is <NLORDERCONFIRMATIONNUMBER> and you will find the details of your order below.</p>
+            <p>You will be kept up to date about the delivery status of your order, including being notified when it is dispatched. 
+            Orders that do not contain plants on pre-order are typically received in 3-5 working days</p>
+            <p> <b/> Need Help Planting? </b><br/>Why not visit our Youtube channel for helpful videos on what you'll need and how to plant when your plants do arrive, including preparing the ground and using rootgrow. Or, for a written explanation, visit our blog and advice section.</p>             
+            {{> button type='b4h' url='http://www.best4hedging.co.uk' title='B4H Blog!' }}
+            <p>Thank you,<br/>Best4Hedging</p><br/><br/>
+            <p>Your order details are</p> 
+            <NLCURRENTDATE>
+            <NLITEMLIST>
+            <NLSHIPADDRESS>
           </td>
         </tr>
 
