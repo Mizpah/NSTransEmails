@@ -1,13 +1,13 @@
 ---
 layout: default.hbs
-subject: We are processing your Hedges Direct order | Reference number <NLORDERCONFIRMATIONNUMBER>
+subject: We are processing your Best4Hedging order | Reference number <NLORDERCONFIRMATIONNUMBER>
 ---
 <span class="preheader">You can see the details of your order below.</span>
 <div class="header">
   <table>
     <tr>
       <td class="align-center">
-        <a href="http://www.hedgesdirect.com"><img src="https://system.eu1.netsuite.com/core/media/media.nl?id=3942&c=4635725_SB1&h=f414b4be4f035671560e" height="80" alt="Hedges Direct Logo"></a>
+        <a href="http://www.best4hedging.com"><img src="https://system.eu1.netsuite.com/core/media/media.nl?id=4823&c=4635725_SB1&h=cd66d4c5a26769fcfbb8&whence=" height="80" alt="Best4hedging Logo"></a>
       </td>
     </tr>
   </table>
@@ -27,26 +27,28 @@ subject: We are processing your Hedges Direct order | Reference number <NLORDERC
             <p>Most deliveries are made within 3 to 5 working days - though sometimes may take a little longer. The majority of orders will delivered by courier and some larger orders will be put onto a pallet for delivery - we will contact you separately if this is the case.</p>
             <p> You will receive confirmation of the dispatch of your order but should you have any queries in the meantime please contact our service team on <phone number></p>
             <p> <b/> Need Help Planting? </b><br/>Visit our Youtube channel for helpful videos on what you'll need and how to plant, including preparing the ground and using rootgrow. Or, for a written explanation, visit our blog and advice section.</p>             
-            {{> button type='hedges' url='http://www.hedgesdirect.co.uk' title='Hedges Blog' }}
+            {{> button type='b4h' url='http://www.best4hedging.co.uk' title='B4H Blog!' }}
             <p>The details of your order are;</p>
              <NLCURRENTDATE>
             <NLITEMLIST>
             <NLSHIPADDRESS>
-            <p>Thank you,<br/>Hedges Direct</p>
+            <p>Thank you,<br/>Best4Hedging</p>
           </td>
         </tr>
+
       </table>
     </td>
+
   </tr>
 <tr>
-  <td>{{> bodybase_hd }}</td>
+  <td>{{> bodybase_b4h }}</td>
 </tr>
 </table>
 <div class="footer">
   <table>
   <tr>
       <td class="align-center">
-        <p>{{> socialbar_hd }}</p>
+        <p>{{> socialbar_b4h }}</p>
       </td>
     </tr>
     <tr>

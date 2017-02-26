@@ -1,8 +1,8 @@
 ---
 layout: default.hbs
-subject: Return Acknowledgement 
+subject: We have received your return to Hedges Direct
 ---
-<span class="preheader">This is preview text on some email clients. Please click the important button in this email.</span>
+<span class="preheader">You can see details of your return below</span>
 <div class="header">
   <table>
     <tr>
@@ -23,10 +23,11 @@ subject: Return Acknowledgement
       </tr>
         <tr>
           <td>
-            <p>This is the Return Acknowledgement email, with simple text in a paragraph</p>
-            <p>This is another paragraph. We are also use the tag 'NLCUSTOMNAME' after the salutation. If not sending from Netsuite, this may appear blank. There is an example button below.</p>
-            {{> button type='hedges' url='http://www.hedgesdirect.co.uk' title='Click Me!' }}
-            <p>This template should come in handy for branded transactional emails. As a final point we use some clever templating to build the media links below - Never edit them directly!</p>
+            <p>This email is to let you know that we have successfully received your return for order <NLORDERCONFIRMATIONNUMBER> and will process your refund</p>
+            <p>If you need any help with this order you can call our customer service team on 01257 447 522<br/>
+            Or if you would like help placing a new order you can reach our sales team on 01257 263 873</p>
+            <p/>Thank you,<br/>
+            Hedges Direct"</p>
           </td>
         </tr>
 

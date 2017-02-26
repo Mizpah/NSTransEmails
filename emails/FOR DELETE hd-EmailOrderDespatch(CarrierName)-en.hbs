@@ -1,8 +1,8 @@
 ---
 layout: default.hbs
-subject: Your password reset for Hedges Direct
+subject: Order Dispatch Carrier 
 ---
-<span class="preheader">Find your new password below.</span>
+<span class="preheader">This is preview text on some email clients. Please click the important button in this email.</span>
 <div class="header">
   <table>
     <tr>
@@ -23,11 +23,10 @@ subject: Your password reset for Hedges Direct
       </tr>
         <tr>
           <td>
-            <p>Thank you for requesting your Hedges Direct account password be reset.
-            You will find your new password below via the link below.</p><br/>
-            <NLRECOVERYPASSWORDURL>
-            <p/>Thank you,<br/>
-            Hedges Direct</p>
+            <p>This is the Order Despatch Carrier email, with simple text in a paragraph</p>
+            <p>This is another paragraph. We are also use the tag 'NLCUSTOMNAME' after the salutation. If not sending from Netsuite, this may appear blank. There is an example button below.</p>
+            {{> button type='hedges' url='http://www.hedgesdirect.co.uk' title='Click Me!' }}
+            <p>This template should come in handy for branded transactional emails. As a final point we use some clever templating to build the media links below - Never edit them directly!</p>
           </td>
         </tr>
 

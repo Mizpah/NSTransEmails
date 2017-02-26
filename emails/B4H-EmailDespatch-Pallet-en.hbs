@@ -1,13 +1,13 @@
 ---
 layout: default.hbs
-subject: Your Hedges Direct order has been despatched with (carrier name)
+subject: Your pallet delivery with Best4Hedging has been despatched
 ---
-<span class="preheader">See below for tracking information.</span>
+<span class="preheader">See below for order and delivery information.</span>
 <div class="header">
   <table>
     <tr>
       <td class="align-center">
-        <a href="http://www.hedgesdirect.com"><img src="https://system.eu1.netsuite.com/core/media/media.nl?id=3942&c=4635725_SB1&h=f414b4be4f035671560e" height="80" alt="Hedges Direct Logo"></a>
+        <a href="http://www.best4hedging.com"><img src="https://system.eu1.netsuite.com/core/media/media.nl?id=4823&c=4635725_SB1&h=cd66d4c5a26769fcfbb8&whence=" height="80" alt="Best4hedging Logo"></a>
       </td>
     </tr>
   </table>
@@ -23,12 +23,11 @@ subject: Your Hedges Direct order has been despatched with (carrier name)
       </tr>
         <tr>
           <td>
-            <p>Your order <NLORDERCONFIRMATIONNUMBER> has now been dispatched with (carriername).<br/>
+            <p>Your order <NLORDERCONFIRMATIONNUMBER> has now been dispatched. 
             All orders are delivered without requiring a signature so you don't have to worry about being on hand to receive the delivery</p>
-            <p>You can track the progress of your order here <NLORDERTRACKING>. 
             <p/>Please contact us if you require any further assistance</p>
-            <p>Thank you,<br/>Hedges Direct</p><br/><br/>
-            <p>Your order details are</p>  
+            <p>Thank you,<br/>Best4Hedging</p><br/><br/>
+            <p>Your order details are</p> 
             <NLCURRENTDATE>
             <NLITEMLIST>
             <NLSHIPADDRESS>
@@ -40,14 +39,14 @@ subject: Your Hedges Direct order has been despatched with (carrier name)
 
   </tr>
 <tr>
-  <td>{{> bodybase_hd }}</td>
+  <td>{{> bodybase_b4h }}</td>
 </tr>
 </table>
 <div class="footer">
   <table>
   <tr>
       <td class="align-center">
-        <p>{{> socialbar_hd }}</p>
+        <p>{{> socialbar_b4h }}</p>
       </td>
     </tr>
     <tr>

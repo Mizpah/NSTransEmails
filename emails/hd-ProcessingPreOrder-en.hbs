@@ -1,8 +1,8 @@
 ---
 layout: default.hbs
-subject: Processing pre-order 1 
+subject: We are processing your Hedges Direct pre-order | Full information inside
 ---
-<span class="preheader">This is preview text on some email clients. Please click the important button in this email.</span>
+<span class="preheader">Please find your order details below.</span>
 <div class="header">
   <table>
     <tr>
@@ -23,10 +23,18 @@ subject: Processing pre-order 1
       </tr>
         <tr>
           <td>
-            <p>This is the first processing pre-order email, with simple text in a paragraph</p>
-            <p>This is another paragraph. We are also use the tag 'NLCUSTOMNAME' after the salutation. If not sending from Netsuite, this may appear blank. There is an example button below.</p>
-            {{> button type='hedges' url='http://www.hedgesdirect.co.uk' title='Click Me!' }}
-            <p>This template should come in handy for branded transactional emails. As a final point we use some clever templating to build the media links below - Never edit them directly!</p>
+           <p/>Thank you for your order <NLORDERCONFIRMATIONNUMBER></p>
+           <p/>Your order contains plants which are on pre-order. As soon as your plants are ready, we will despatch your whole order to you.<br/>
+           <p/>All the information regarding different root types and their availability is available on our website. </p><br/><br/>
+           <p/><b/>Ordered Turf or Trees?</b><br>
+           If your order contains turf or trees as well as other pre-ordered plants, the turf or trees <b/>will</b> be delivered separately and you will be contacted to arrange a suitable date for delivery. <br/>
+           <p/><b/>Need Help Planting?</b></p>
+           <p/>Thank you,<br/>
+           Hedges Direct</p>
+           <p/>Your order details: </p>
+            <NLCURRENTDATE>
+            <NLITEMLIST>
+            <NLSHIPADDRESS>
           </td>
         </tr>
 

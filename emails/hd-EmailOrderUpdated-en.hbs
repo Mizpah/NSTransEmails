@@ -1,8 +1,8 @@
 ---
 layout: default.hbs
-subject: Your password reset for Hedges Direct
+subject: Your Hedges Direct order has been updated
 ---
-<span class="preheader">Find your new password below.</span>
+<span class="preheader">See the updated details below.</span>
 <div class="header">
   <table>
     <tr>
@@ -23,11 +23,13 @@ subject: Your password reset for Hedges Direct
       </tr>
         <tr>
           <td>
-            <p>Thank you for requesting your Hedges Direct account password be reset.
-            You will find your new password below via the link below.</p><br/>
-            <NLRECOVERYPASSWORDURL>
-            <p/>Thank you,<br/>
-            Hedges Direct</p>
+            <p>This email is to confirm that your order <NLORDERCONFIRMATIONNUMBER> has been successfully updated. 
+            Please see below for the updated details.</p><br/>
+            <p>Thank you,<br/>Hedges Direct</p><br/><br/>
+            <p>Your order details are</p> 
+            <NLCURRENTDATE>
+            <NLITEMLIST>
+            <NLSHIPADDRESS>
           </td>
         </tr>
 

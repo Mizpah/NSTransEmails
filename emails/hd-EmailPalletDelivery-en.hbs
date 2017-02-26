@@ -1,8 +1,8 @@
 ---
 layout: default.hbs
-subject: Pallet Delivery
+subject: Your pallet delivery with Hedges Direct has been despatched
 ---
-<span class="preheader">This is preview text on some email clients. Please click the important button in this email.</span>
+<span class="preheader">See below for order and delivery information.</span>
 <div class="header">
   <table>
     <tr>
@@ -22,11 +22,15 @@ subject: Pallet Delivery
         </td>
       </tr>
         <tr>
-          <td>
-            <p>This is the Pallet Delivery email, with simple text in a paragraph</p>
-            <p>This is another paragraph. We are also use the tag 'NLCUSTOMNAME' after the salutation. If not sending from Netsuite, this may appear blank. There is an example button below.</p>
-            {{> button type='hedges' url='http://www.hedgesdirect.co.uk' title='Click Me!' }}
-            <p>This template should come in handy for branded transactional emails. As a final point we use some clever templating to build the media links below - Never edit them directly!</p>
+           <td>
+            <p>Your order <NLORDERCONFIRMATIONNUMBER> has now been dispatched. 
+            All orders are delivered without requiring a signature so you don't have to worry about being on hand to receive the delivery</p>
+            <p/>Please contact us if you require any further assistance</p>
+            <p>Thank you,<br/>Hedges Direct</p><br/><br/>
+            <p>Your order details are</p> 
+            <NLCURRENTDATE>
+            <NLITEMLIST>
+            <NLSHIPADDRESS>
           </td>
         </tr>
 
