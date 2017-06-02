@@ -1,21 +1,21 @@
 /* -------------------------------------
-    Hedges Direct Specific Styles
+   Hecken Direkt Specific Styles
 ------------------------------------- */
 
-table.hd-soil {
+table.hdde-soil {
   padding: 0px;
 }
 
-table.hd-soil tr {
+table.hdde-soil tr {
   padding: 0px;
 }
 
-.hd-soil-upper {
+.hdde-soil-upper {
 
     background-color: #7a5542;
     color: #FFFFFF;
     /*background-image: url(../img/soil-lightbrown.png);*/
-    background-image: url(https://system.eu2.netsuite.com/c.4635725/HD%20Email%20Images/soil-lightbrown.png);
+    background-image: url(https://system.eu2.netsuite.com/c.4635725/HD%20DE%20Email%20Images/soil-lightbrown.png);
     background-size: contain;
     background-position: top 0px;
     background-repeat: no-repeat;
@@ -24,12 +24,12 @@ table.hd-soil tr {
     min-height: 30px;
     height: 30px;
   }
-  .hd-soil-lower {
+  .hdde-soil-lower {
 
      background-color: #684432;
     color:#FFFFFF;
     /*background-image: url(../img/soil-brown.png);*/
-    background-image: url(https://system.eu2.netsuite.com/c.4635725/HD%20Email%20Images/soil-brown.png);
+    background-image: url(https://system.eu2.netsuite.com/c.4635725/HD%20DE%20Email%20Images/soil-brown.png);
     background-size: contain;
     background-position: top 0px;
     background-repeat: no-repeat;
@@ -39,24 +39,20 @@ table.hd-soil tr {
     height: 60px;
   }
 
-table.order_details.hedges td, table.order_details.hedges th {
+table.order_details.hecken td, table.order_details.hecken th {
     padding: 8px 5px;
     text-align: left;
 }
-table.order_details.hedges {
+table.order_details.hecken {
     width: 90%;
     margin: 0 auto;
 }
 .padded-wrapper {
   padding: 0 30px;
 }
-.hedges-atag {
+.hecken-atag {
   font-weight: 500;
   text-transform: none;
   color: #23a140;
   text-decoration: none;
-}
-
-.socialbar {
-  align-content: center;
 }

@@ -1,0 +1,51 @@
+---
+layout: default.hbs
+subject: Ihre Bestellung bei Hecken Direkt wurde verschickt
+---
+<span class="preheader">Sehen Sie nachstehend die Einzelheiten zu Ihrer Bestellung und zum Versandt.</span>
+<div class="header">
+  <table>
+      <tr>
+      <td class="align-center">
+        {{> logo_hdde }}
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      <tr>
+        <td>
+<p>Sehr geehrte/r Frau/Herr ${entity.firstname} ${entity.lastname},</p>
+        </td>
+      </tr>
+        <tr>
+           <td>
+            <p>Ihre Bestellung ${transaction.tranid} wurde vesandt.
+            Alle Lieferungen bedürfen einer Unterschrift!</p>
+            <p>Bitte kontaktieren Sie uns, wenn wir Ihnen anderweitig behilflich sein können.</p>
+            <p>Vielen Dank,<br/><b>Hecken Direkt</b><br/></p>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <tr>
+      <td class="padded-wrapper">
+        <p>Die Angaben Ihrer Bestellung finden Sie hier:</p>
+          {{> order_details type='hecken'}}
+      </td>
+    </tr>
+<tr>
+  <td>{{> bodybase_hdde }}</td>
+</tr>
+</table>
+<div class="footer">
+  <table>
+  <tr>
+      <td class="align-center">
+      </td>
+    </tr>
+  </table>
+</div>

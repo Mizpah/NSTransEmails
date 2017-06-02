@@ -1,0 +1,46 @@
+---
+layout: default.hbs
+subject: Wir haben die Ware i.Z.m. Ihrer Stornierung bei Hecken Direkt erhalten
+---
+<span class="preheader">Die detallierten Angaben zu Ihrer Rücksendung sind nachstehend aufgeführt</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        {{> logo_hdde }}
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      <tr>
+        <td>
+<p>Sehr geehrte/r Frau/Herr ${entity.firstname} ${entity.lastname},</p>
+        </td>
+      </tr>
+        <tr>
+          <td>
+            <p>mit dieser E-Mail bestätigen wir Ihnen den Erhalt Ihrer Rücksendung i.Z.m. der Bestellnummer ${transaction.tranid}, wir werden die Rückerstattung einleiten.</p>
+            <p>Sollten Sie hierzu Fragen haben, wenden Sie sich bitte an unser Kundenserviceteam unter 03022 957715,<br/>
+            oder wenn Sie eine neue Bestellung aufgeben möchten, wenden Sie sich bitte an unser Verkaufsteam unter 03022 957715.</p>
+           <p>Vielen Dank,<br/><b>Hecken Direkt</b><br/><br/></p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+<tr>
+  <td>{{> bodybase_hdde }}</td>
+</tr>
+</table>
+<div class="footer">
+  <table>
+  <tr>
+      <td class="align-center">
+      </td>
+    </tr>
+  </table>
+</div>

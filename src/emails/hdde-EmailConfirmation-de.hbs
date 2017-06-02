@@ -1,0 +1,39 @@
+---
+layout: default.hbs
+subject: Vielen Dank für Ihre Bestellung bei Hecken Direkt
+---
+<span class="preheader">Wir haben Ihre Bestellung erhalten ${transaction.tranid}.</span>
+<div class="header">
+  <table>
+    <tr>
+     <td class="align-center">
+        {{> logo_hdde }}
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      {{> salutation_hd }}
+      <tr>
+        <td>
+          <p>Replace this text with the email confirmation template</p>
+        </td>
+      </tr>
+      {{> signoff }}
+      </table>
+    </td>
+  </tr>
+{{> bodybase_hdde }}
+</table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+      {{> socialbar_hd }}
+      </td>
+    </tr>
+  </table>
+</div>

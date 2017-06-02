@@ -1,0 +1,44 @@
+---
+layout: default.hbs
+subject: Ihr Kostenvoranschlag von Hecken Direkt
+---
+<span class="preheader">Ihre Bestellung ${transaction.tranid} wurde erfolgreich storniert.</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        {{> logo_hdde }}
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      <tr>
+        <td>
+<p>Sehr geehrte/r Frau/Herr ${entity.firstname} ${entity.lastname},</p>
+        </td>
+      </tr>
+        <tr>
+          <td>
+            <p>anbei übersenden wir Ihnen den gewünschten Kostenvoranschlag, Ihre Kostenvoranschlag Nummer ist ${transaction.tranid}.</p>
+            <p>Vielen Dank,<br/><b>Hecken Direkt</b><br/><br/></p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+  <td>{{> bodybase_hdde }}</td>
+</tr>
+</table>
+<div class="footer">
+  <table>
+  <tr>
+      <td class="align-center">
+      </td>
+    </tr>
+  </table>
+</div>

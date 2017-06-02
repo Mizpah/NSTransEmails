@@ -1,0 +1,29 @@
+---
+layout: default.hbs
+subject: Your invoice from Hedges Direct
+---
+<span class="preheader">Your Invoice ${transaction.tranid} from Hedges Direct.</span>
+<div class="header">
+  <table>
+        {{> logo_hd }}
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      {{> salutation_hd }}
+        <tr>
+          <td>
+            <p>Your invoice, number ${transaction.tranid} is attached.</p>
+            <p>Thank you,<br/><b>Hedges Direct</b><br/><br/></p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  {{> bodybase_hd }}
+</table>
+<div class="footer">
+  {{> socialbar_hd }}
+</div>

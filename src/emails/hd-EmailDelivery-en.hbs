@@ -1,0 +1,44 @@
+---
+layout: default.hbs
+subject: Your delivery with Hedges Direct has been despatched
+---
+<span class="preheader">See below for order and delivery information.</span>
+<div class="header">
+  <table>
+        {{> logo_hd }}
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      {{> salutation_hd }}
+        <tr>
+           <td>
+            <p>Your order ${transaction.createdfrom.tranid} has now been dispatched.
+            All orders are delivered without requiring a signature so you don't have to worry about being on hand to receive the delivery!</p>
+            <p/>Please contact us if you require any further assistance.</p>
+          </td>
+        </tr>
+       {{> signoff}}
+      </table>
+    </td>
+    <tr>
+      <td class="padded-wrapper">
+        <p>Your order details:</p>
+          {{> order_details type='hedges'}}
+      </td>
+    </tr>
+<tr>
+  <td>{{> bodybase_hd }}</td>
+</tr>
+</table>
+<div class="footer">
+  <table>
+  <tr>
+      <td class="align-center">
+      {{> socialbar_hd }}
+      </td>
+    </tr>
+  </table>
+</div>

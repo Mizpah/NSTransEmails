@@ -7,7 +7,7 @@ subject: Your delivery with Best4Hedging has been despatched
   <table>
     <tr>
       <td class="align-center">
-        <a href="http://www.best4hedging.com"><img src="https://system.eu1.netsuite.com/core/media/media.nl?id=4823&c=4635725_SB1&h=cd66d4c5a26769fcfbb8&whence=" height="80" alt="Best4hedging Logo"></a>
+        <a href="http://www.best4hedging.com"><img src="https://system.eu1.netsuite.com/core/media/media.nl?id=4823&c=4635725_SB1&h=cd66d4c5a26769fcfbb8&whence=" height="60" alt="Best4hedging Logo"></a>
       </td>
     </tr>
   </table>
@@ -18,25 +18,37 @@ subject: Your delivery with Best4Hedging has been despatched
       <table>
       <tr>
         <td>
-        <p>Dear <NLCUSTOMERNAME>,</p>
+        <p>Dear ${entity.firstname} ${entity.lastname},</p>
         </td>
       </tr>
         <tr>
           <td>
-            <p>Your order <NLORDERCONFIRMATIONNUMBER> has now been dispatched. 
-            All orders are delivered without requiring a signature so you don't have to worry about being on hand to receive the delivery</p>
-            <p/>Please contact us if you require any further assistance</p>
+            <p>Thank you for your order, it has now been dispatched. All of our orders are delivered without requiring a signature so you don't have to worry about being on hand to receive the delivery.</p>
+            <p>For your convenience, here are the details for your order, ${transaction.createdfrom.tranid}.</p>
+            <!--Start Items-->
+            <table>
+            <#list transaction.item="" as="" item=""><#if item_index="=0">
+            <thead>
+              <tr>
+                <th>${item.quantity@label}</th><th>${item.itemname@label}</th>
+              </tr>
+            </thead>
+            <#if>
+            <tr>
+              <td>${item.quantity}</td><td>${item.description}</td>
+            </tr>
+            </#if></#if></#list>
+            </table>
+            <br/>
+            <!--End Items-->
+            <p>We are have shipped your order to:</p>
+            <span>${transaction.shipaddress}</span>
+            <p>Please be sure to contact us if you require any further assistance.</p>
             <p>Thank you,<br/>Best4Hedging</p><br/><br/>
-            <p>Your order details are</p> 
-            <NLCURRENTDATE>
-            <NLITEMLIST>
-            <NLSHIPADDRESS>
           </td>
         </tr>
-
       </table>
     </td>
-
   </tr>
 <tr>
   <td>{{> bodybase_b4h }}</td>
@@ -51,7 +63,7 @@ subject: Your delivery with Best4Hedging has been despatched
     </tr>
     <tr>
       <td class="align-center">
-        <p>{{> unsubscribe_hd }}</p>
+        <p>www.best4hedging.co.uk</p>
       </td>
     </tr>
   </table>

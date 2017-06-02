@@ -2,12 +2,12 @@
 layout: default.hbs
 subject: Your Hedges Direct order has been updated
 ---
-<span class="preheader">See the updated details below.</span>
+<span class="preheader">See your updated order details below.</span>
 <div class="header">
   <table>
     <tr>
-      <td class="align-center">
-        <a href="http://www.hedgesdirect.com"><img src="https://system.eu1.netsuite.com/core/media/media.nl?id=3942&c=4635725_SB1&h=f414b4be4f035671560e" height="80" alt="Hedges Direct Logo"></a>
+     <td class="align-center">
+        {{> logo_hd }}
       </td>
     </tr>
   </table>
@@ -18,24 +18,24 @@ subject: Your Hedges Direct order has been updated
       <table>
       <tr>
         <td>
-        <p>Dear <NLCUSTOMERNAME>,</p>
+        <p>Dear ${entity.firstname} ${entity.lastname},</p>
         </td>
       </tr>
         <tr>
           <td>
-            <p>This email is to confirm that your order <NLORDERCONFIRMATIONNUMBER> has been successfully updated. 
+             <p>This email is to confirm that your order ${transaction.tranid} has been successfully updated.
             Please see below for the updated details.</p><br/>
-            <p>Thank you,<br/>Hedges Direct</p><br/><br/>
-            <p>Your order details are</p> 
-            <NLCURRENTDATE>
-            <NLITEMLIST>
-            <NLSHIPADDRESS>
+            <p>Thank you,<br/><b>Hedges Direct</b><br/><br/></p>
           </td>
         </tr>
-
-      </table>
+        <tr>
+      <td class="padder-wrapper">
+        <p>Your updated order details are:</p>
+          {{> order_details type='hedges'}}
+      </td>
+    </tr>
+    </table>
     </td>
-
   </tr>
 <tr>
   <td>{{> bodybase_hd }}</td>
@@ -46,11 +46,6 @@ subject: Your Hedges Direct order has been updated
   <tr>
       <td class="align-center">
         <p>{{> socialbar_hd }}</p>
-      </td>
-    </tr>
-    <tr>
-      <td class="align-center">
-        <p>{{> unsubscribe_hd }}</p>
       </td>
     </tr>
   </table>

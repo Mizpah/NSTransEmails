@@ -1,0 +1,49 @@
+---
+layout: default.hbs
+subject: Ihre stornierte Bestellung bei Hecken Direkt
+---
+<span class="preheader">Ihre Bestellung ${transaction.createdfrom.tranid} wurde erfolgreich storniert.</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        {{> logo_hdde }}
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      <tr>
+        <td>
+<p>Sehr geehrte/r Frau/Herr ${entity.firstname} ${entity.lastname},</p>
+        </td>
+      </tr>
+        <tr>
+          <td>
+            <p>wir möchten Ihnen hiermit bestätigen, daß Ihre Bestellung ${transaction.tranid} storniert worden ist.</p>
+            <p>Sollten Sie weitere Hilfe oder Beratung wünschen, kontaktieren Sie bitte unser Verkaufs- oder Kundenserviceteam.</p>
+            <p><b>Sie haben ein anderes Anliegen?</b></p>
+            <p>Wenn Sie Ihre Bestellung storniert haben, aber weiterhin Heckenpflanzen benötigen, wenden Sie sich bitte an unser Verkaufs- oder Kundenserviceteam unter 03022 957715 order info@heckendirekt.de, dieses wird Ihnen gerne Ihre Fragen beantworten, um die richtige Heckenpflanze und die benötigte Menge zu finden.</p>
+            <p>Für schriftliche Hinweise finden Sie umfangreiches Material auf unserer Webseite {{> visit_hdde }}.</p>
+
+            <p>Vielen Dank,<br/><b>Hecken Direkt</b><br/><br/></p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+  <td>{{> bodybase_hdde }}</td>
+</tr>
+</table>
+<div class="footer">
+  <table>
+  <tr>
+      <td class="align-center">
+      </td>
+    </tr>
+  </table>
+</div>

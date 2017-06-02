@@ -1,0 +1,56 @@
+---
+layout: default.hbs
+subject: Ihre Bestellung bei Hecken Direkt ist in Bearbeitung ist ${transaction.createdfrom.tranid}
+---
+<span class="preheader">Alle Angaben zu Ihrer Bestellung finden Sie nachfolgend.</span>
+<div class="header">
+  <table>
+    <tr>
+     <td class="align-center">
+        {{> logo_hdde }}
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+<tr>
+        <td>
+<p>Sehr geehrte/r Frau/Herr ${entity.firstname} ${entity.lastname},</p>
+        </td>
+      </tr>
+      <tr>
+          <td>
+            <p>Ihre Betellung mit Betstellnummer: ${transaction.tranid} ist in Bearbeitung</p>
+            <p>Die Zustellung erfolgt durch einen Kurierdienst innerhalb von 3 bis 5 Werktagen. Sollte Ihre Bestellung einen Transport per Palette erfordern, werden wir Sie ggf. kontaktieren.</p>
+            <p>Sie erhalten eine E-Mail-Benachrichtigung über den Versandt Ihrer Bestellung. Sollten Sie Fragen dazu haben wenden Sie sich bitte an unser Serviceteam 03022 957715</p>
+            <p><b>Sie brauchen Hilfe zum richtigen Pflanzen?</b><br/>
+            Besuchen Sie bitte unsere Webseite mit Informationen zum Thema.</p>
+            <p>Vielen Dank,<br/><b>Hecken Direkt</b><br/><br/></p>
+          </td>
+        </tr>
+        <tr>
+      <td>
+        <p>Die Angaben Ihrer Bestellung finden Sie hier:</p>
+          {{> order_details type='hecken'}}
+      </td>
+    </tr>
+      </table>
+    </td>
+  </tr>
+<tr>
+  <td>{{> bodybase_hdde }}</td>
+</tr>
+</table>
+<div class="footer">
+  <table>
+  <tr>
+      <td class="align-center">
+      </td>
+    </tr>
+    <tr>
+    </tr>
+  </table>
+</div>

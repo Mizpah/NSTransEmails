@@ -1,0 +1,31 @@
+---
+layout: default.hbs
+subject: Ihre Rechnung von Hecken Direkt
+---
+<span class="preheader">{{hd.sales_phone}}.</span>
+<div class="header">
+  <table>
+    {{> logo_hdde }}
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      {{> salutation_hdde }}
+      <tr>
+        <td>
+          <p>anbei übersenden wir Ihnen Ihre Rechnung, Ihre Rechnungsnummer ist ${transaction.tranid}.</p>
+        </td>
+      </tr>
+      {{> signoff }}
+      </table>
+    </td>
+  </tr>
+  {{> bodybase_hdde }}
+</table>
+<div class="footer">
+  <table>
+      {{> socialbar_hdde }}
+  </table>
+</div>

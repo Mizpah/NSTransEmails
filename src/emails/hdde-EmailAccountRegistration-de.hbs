@@ -1,0 +1,40 @@
+---
+layout: default.hbs
+subject: Vielen Dank für das Anlegen eines Kundenkontos bei Hecken Direkt
+---
+<span class="preheader">Sie brauchen Hilfe oder Beratung, wir helfen Ihnen gerne {{hdde.sales_phone}}.</span>
+<div class="header">
+  <table>
+        {{> logo_hdde }}
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+      <tr>
+        <td>
+        <p>Sehr geehrte/r Frau/Herr ${entity.firstname} ${entity.lastname},</p>
+        </td>
+      </tr>
+        <tr>
+          <td>
+            <p>vielen Dank für Ihre Registrierung bei HeckenDirekt.de</p><br/>
+
+            {{> button type='hecken' align='center' url='http://www.heckendirekt.de' title='Besuchen Sie unsere Webseite' }}
+            <p/><br><b/>Sie brauchen Hilfe oder Beratung?</b><br/>
+            Wie haben eine große Auswahl an hifreichen Artikeln auf unserer Webseite für Sie zusammengestellt.
+            Oder rufen Sie unser Verkaufs- oder Serviceteam unter 03022 957715 an, schriftlich erreichen Sie uns unter userer E-mail info@heckendirekt.de</p>
+            <p>Mit freundlichen Grüßen,<br/><b>Hecken Direkt</b><br/><br/></p>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+<tr>
+  <td>{{> bodybase_hdde }}</td>
+</tr>
+</table>
+<div class="footer">
+</div>
